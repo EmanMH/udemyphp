@@ -1,0 +1,56 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>udemyphp</Name>
+    <ProjectGuid>{5406bbb5-4f46-4553-b9d4-8d32a5595f4c}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Functions\database.php" />
+    <Compile Include="Images\asterisk.png" />
+    <Compile Include="Images\facebook.png" />
+    <Compile Include="Images\heroAccent.png" />
+    <Compile Include="Images\orderedListOne.png" />
+    <Compile Include="Images\orderedListThree.png" />
+    <Compile Include="Images\orderedListTwo.png" />
+    <Compile Include="Images\Thumbs.db" />
+    <Compile Include="Images\twitter.png" />
+    <Compile Include="Includes\closeDB.php" />
+    <Compile Include="Includes\connectDB.php" />
+    <Compile Include="Includes\footer.php" />
+    <Compile Include="Includes\header.php" />
+    <Compile Include="Includes\session.php" />
+    <Compile Include="Includes\simplecms-config-sample.php" />
+    <Compile Include="Includes\simplecms-config.php" />
+    <Compile Include="Styles\Site.css" />
+    <Compile Include="addpage.php" />
+    <Compile Include="azuredeploy.json" />
+    <Compile Include="deletepage.php" />
+    <Compile Include="editpage.php" />
+    <Compile Include="EULA_ENU.rtf" />
+    <Compile Include="favicon.ico" />
+    <Compile Include="index.php" />
+    <Compile Include="logoff.php" />
+    <Compile Include="logon.php" />
+    <Compile Include="page.php" />
+    <Compile Include="README.md" />
+    <Compile Include="register.php" />
+    <Compile Include="robots.txt" />
+    <Compile Include="selectpagetoedit.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Functions" />
+    <Folder Include="Images" />
+    <Folder Include="Includes" />
+    <Folder Include="Styles" />
+  </ItemGroup>
+</Project>
